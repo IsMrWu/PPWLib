@@ -1,2 +1,2 @@
 include ':app', ':jsbridge', ':library-wedget'
-rootProject.name='JsBridge'
+rootProject.name='PPWLib'
