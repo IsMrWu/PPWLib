@@ -1,2 +1,2 @@
-include ':app', ':jsbridge', ':wedget',":aachart"
+include ':app', ':jsbridge',":aachart"
 rootProject.name='PPWLib'
