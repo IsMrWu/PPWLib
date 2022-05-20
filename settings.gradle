@@ -1,2 +1,3 @@
 include ':app', ':jsbridge',":aachart"
 rootProject.name='PPWLib'
+include ':downloadInstaller'
