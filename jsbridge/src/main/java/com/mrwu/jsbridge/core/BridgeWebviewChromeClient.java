@@ -4,7 +4,7 @@ import android.webkit.JsPromptResult;
 import android.webkit.WebChromeClient;
 import android.webkit.WebView;
 
-
+@Deprecated
 public class BridgeWebviewChromeClient extends WebChromeClient {
 
     private String TAG = "BridgeWebviewChromeClient";

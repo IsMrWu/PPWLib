@@ -14,7 +14,7 @@
 
         <provider
             android:name=".DownloadInstallerProvider"
-            android:authorities="${applicationId}.fileProvider"
+            android:authorities="${applicationId}.DownloadInstallerProvider"
             android:exported="false"
             android:grantUriPermissions="true"
             tools:replace="android:authorities">

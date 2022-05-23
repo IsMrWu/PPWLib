@@ -173,16 +173,8 @@ public class DownloadInstaller {
         downloadApkNotifyId = downloadApkUrlMd5.hashCode();
 
         //https://developer.android.com/studio/build/application-id?hl=zh-cn
-        authority = applicationID + ".fileProvider";
-
-        //todo 路径要支持自定义，适配分区储存，卸载后App缓存也要删除
-
-        if (Build.VERSION.SDK_INT < Build.VERSION_CODES.N) {
-            storagePrefix = Environment.getExternalStorageDirectory().getPath() + "/update/";
-        } else {
-            storagePrefix = mContext.getFilesDir().getPath() + "/update/";
-        }
-
+        authority = applicationID + ".DownloadInstallerProvider";
+        storagePrefix = mContext.getFilesDir().getPath() + "/update/";
         storageApkPath = storagePrefix + AppUtils.getAppName(mContext) + downloadApkUrlMd5 + ".apk";
         Integer downloadStatus = downLoadStatusMap.get(downloadApkUrlMd5);
 

@@ -12,7 +12,7 @@ import android.webkit.WebViewClient;
 import java.util.HashMap;
 import java.util.Map;
 
-
+@Deprecated
 @SuppressLint("SetJavaScriptEnabled")
 public class BridgeWebView extends WebView implements IWebView {
 
